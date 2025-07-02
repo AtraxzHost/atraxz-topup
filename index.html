@@ -5,6 +5,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Top Up Game - AtraxzShop</title>
   <link rel="stylesheet" href="style.css">
+  <script>
+    function handleTopUp(event) {
+      event.preventDefault();
+      const userId = document.getElementById('user-id').value;
+      const nominal = document.getElementById('nominal').value;
+      const payment = document.getElementById('payment').value;
+      if (!userId) {
+        alert("Silakan masukkan ID Pemain terlebih dahulu.");
+        return;
+      }
+      alert(`Top up berhasil!\nID: ${userId}\nNominal: ${nominal}\nMetode: ${payment}`);
+    }
+  </script>
 </head>
 <body>
   <header>
@@ -28,7 +41,7 @@
 
   <section id="topup" class="form-section">
     <h2>Form Top Up</h2>
-    <form>
+    <form onsubmit="handleTopUp(event)">
       <label for="user-id">ID Pemain:</label>
       <input type="text" id="user-id" placeholder="Masukkan ID">
 
