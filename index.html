@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Top Up Game - AtraxzShop</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>AtraxzShop</h1>
+    <p>Top up cepat dan terpercaya</p>
+  </header>
+
+  <section class="game-list">
+    <h2>Pilih Game</h2>
+    <div class="game-card">
+      <img src="assets/images/mlbb.png" alt="Mobile Legends">
+      <p>Mobile Legends</p>
+      <a href="#topup">Top Up</a>
+    </div>
+    <div class="game-card">
+      <img src="assets/images/freefire.png" alt="Free Fire">
+      <p>Free Fire</p>
+      <a href="#topup">Top Up</a>
+    </div>
+  </section>
+
+  <section id="topup" class="form-section">
+    <h2>Form Top Up</h2>
+    <form>
+      <label for="user-id">ID Pemain:</label>
+      <input type="text" id="user-id" placeholder="Masukkan ID">
+
+      <label for="nominal">Pilih Nominal:</label>
+      <select id="nominal">
+        <option value="10">10 Diamonds - Rp 3.000</option>
+        <option value="50">50 Diamonds - Rp 15.000</option>
+        <option value="100">100 Diamonds - Rp 29.000</option>
+      </select>
+
+      <label for="payment">Metode Pembayaran:</label>
+      <select id="payment">
+        <option value="dana">DANA</option>
+        <option value="gopay">GoPay</option>
+        <option value="qris">QRIS</option>
+      </select>
+
+      <button type="submit">Top Up Sekarang</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 AtraxzShop. Semua Hak Dilindungi.</p>
+  </footer>
+</body>
+</html>
